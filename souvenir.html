@@ -55,14 +55,11 @@
 
     <main class="main">
       <section class="offset_banner">
-        <img src="./assets/img/offset_header_bg.svg" class="offset_bg" alt="" />
+        <img src="./assets/img/souvenir_header_bg.svg" class="offset_bg" alt="" />
         <div class="offset_banner_content container">
           <div class="offset_banner_top">
-            <h2 class="offset_banner_title">
-              Офсетная печать <br />
-              (Большие тиражи)
-            </h2>
-            <div class="offset_banner_top_bottom">
+            <h2 class="offset_banner_title">Сувенирная продукция</h2>
+            <div class="offset_banner_top_bottom mobile">
               <a href="" class="btn"> +996 557 630 110 </a>
               <div class="main_content_item_left_socials mobile">
                 <a href="" class="main_content_item_left_social">
@@ -82,6 +79,7 @@
                 dolore magna aliqua.
               </p>
             </div>
+            <a href="" class="btn"> +996 557 630 110 </a>
             <div class="offset_banner_item">
               <p class="offset_banner_item_text">
                 Ut enim ad minim veniam, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -103,6 +101,12 @@
       <section class="offset_gallery">
         <div class="offset_gallery_content container">
           <h2 class="title">Галерея продукции</h2>
+          <div class="package_plans_categories souvenir_plans">
+            <div class="package_plans_category souvenir_category active">Все категории</div>
+            <div class="package_plans_category souvenir_category">Бейсболки</div>
+            <div class="package_plans_category souvenir_category">Ручки</div>
+            <div class="package_plans_category souvenir_category">Ежедневники</div>
+          </div>
           <div class="offset_gallery_swiper_wrapper">
             <div class="swiper offset_gallery_swiper">
               <div class="swiper-wrapper">
@@ -273,96 +277,6 @@
         </div>
       </section>
 
-      <section class="offset_actions">
-        <div class="container">
-          <h2 class="title">Что мы можем сделать</h2>
-          <div class="offset_actions_content">
-            <div class="offset_actions_items">
-              <div class="offset_actions_wrapper">
-                <div class="offset_actions_item_left">
-                  <img src="./assets/img/offset_actions_item_img.png" alt="" />
-                </div>
-                <div class="offset_actions_item">
-                  <h2>Ut enim ad minim veniam</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                  <div class="swiper offset_actions_swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img src="./assets/img/lorem.png" alt="" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./assets/img/lorem.png" alt="" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./assets/img/lorem.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="offset_actions_wrapper">
-                <div class="offset_actions_item_left">
-                  <img src="./assets/img/offset_actions_item_img.png" alt="" />
-                </div>
-                <div class="offset_actions_item">
-                  <h2>Ut enim ad minim veniam</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                  <div class="swiper offset_actions_swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img src="./assets/img/lorem.png" alt="" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./assets/img/lorem.png" alt="" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./assets/img/lorem.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="offset_actions_wrapper">
-                <div class="offset_actions_item_left">
-                  <img src="./assets/img/offset_actions_item_img.png" alt="" />
-                </div>
-                <div class="offset_actions_item">
-                  <h2>Ut enim ad minim veniam</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                  <div class="swiper offset_actions_swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img src="./assets/img/lorem.png" alt="" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./assets/img/lorem.png" alt="" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./assets/img/lorem.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section class="contact">
         <div class="container">
           <div class="contact_content">
@@ -479,38 +393,6 @@
           prevEl: ".offset_gallery_next",
         },
         speed: 600,
-      });
-
-      let swiper2 = new Swiper(".offset_actions_swiper", {
-        slidesPerView: 3,
-        spaceBetween: 18,
-        pagination: {
-          el: ".swiper-pagination",
-        },
-        speed: 600,
-      });
-
-      let galleryThumbs = new Swiper(".offset_gallery_modal_swiper", {
-        spaceBetween: 10,
-        slidesPerView: 4,
-        freeMode: true,
-        navigation: {
-          nextEl: ".offset_gallery_thumbs_prev",
-          prevEl: ".offset_gallery_thumbs_next",
-        },
-        speed: 600,
-        watchSlidesProgress: true,
-      });
-      let galleryThumbs2 = new Swiper(".offset_gallery_modal_swiper_2", {
-        slidesPerView: 1,
-        navigation: {
-          nextEl: ".offset_gallery_modal_prev",
-          prevEl: ".offset_gallery_modal_next",
-        },
-        speed: 600,
-        thumbs: {
-          swiper: galleryThumbs,
-        },
       });
     </script>
   </body>
