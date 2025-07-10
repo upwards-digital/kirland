@@ -107,6 +107,7 @@ h2 {
   color: var(--white);
   text-decoration: none;
   transition: 0.2s ease-in-out;
+  white-space: nowrap;
 }
 .nav_right.main {
   color: var(--light-blue);
