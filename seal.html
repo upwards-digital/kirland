@@ -17,7 +17,7 @@
   <body>
     <header class="header">
       <nav class="nav container">
-        <a href="" class="nav_logo main">
+        <a href="./index.html" class="nav_logo main">
           <img src="./assets/img/logo_blue.svg" alt="" />
         </a>
         <div class="nav_links main">
@@ -48,10 +48,50 @@
           </svg>
           <p>0312 630110</p>
         </a>
+        <div class="nav_burger">
+          <img src="./assets/img/burger_menu.svg" alt="" />
+        </div>
       </nav>
     </header>
 
     <div class="overlay"></div>
+
+    <div class="burger_menu">
+      <div class="burger_menu_top">
+        <p>Меню</p>
+        <img src="./assets/img/burger_menu_close.png" class="burger_close" alt="" />
+      </div>
+      <div class="burger_menu_links">
+        <a href="./package.html" class="burger_link">Упаковка</a>
+        <a href="./souvenir.html" class="burger_link">Сувенирная продукция</a>
+        <a href="./offset.html" class="burger_link">Офсетная печать</a>
+        <a href="./seal.html" class="burger_link">Цифровая печать</a>
+      </div>
+      <div class="burger_menu_bottom">
+        <a href="" class="nav_right mobile">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask
+              id="mask0_282_6572"
+              style="mask-type: alpha"
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="7"
+              width="24"
+              height="10"
+            >
+              <path
+                d="M4.5801 16.0302L6.5801 14.4402C7.0601 14.0602 7.3401 13.4802 7.3401 12.8702V10.2702C10.3601 9.29016 13.6301 9.28016 16.6601 10.2702V12.8802C16.6601 13.4902 16.9401 14.0702 17.4201 14.4502L19.4101 16.0302C20.2101 16.6602 21.3501 16.6002 22.0701 15.8802L23.2901 14.6602C24.0901 13.8602 24.0901 12.5302 23.2401 11.7802C16.8301 6.12016 7.1701 6.12016 0.760103 11.7802C-0.089897 12.5302 -0.089897 13.8602 0.710103 14.6602L1.9301 15.8802C2.6401 16.6002 3.7801 16.6602 4.5801 16.0302Z"
+                fill="black"
+              />
+            </mask>
+            <g mask="url(#mask0_282_6572)">
+              <rect width="24" height="24" fill="#0059AB" />
+            </g>
+          </svg>
+          <p>0312 630110</p>
+        </a>
+      </div>
+    </div>
 
     <main class="main">
       <section class="offset_banner">
@@ -63,20 +103,20 @@
               ( маленькие тиражи)
             </h2>
             <div class="offset_banner_top_bottom mobile">
-              <a href="" class="btn"> +996 557 630 110 </a>
+              <a href="" class="btn seal_header_btn"> +996 557 630 110 </a>
               <div class="main_content_item_left_socials mobile">
                 <a href="" class="main_content_item_left_social">
-                  <img src="./assets/img/insta.svg" alt="" />
+                  <img src="./assets/img/insta_red.svg" alt="" />
                 </a>
                 <a href="" class="main_content_item_left_social">
-                  <img src="./assets/img/whatsapp.svg" alt="" />
+                  <img src="./assets/img/whatsapp_red.svg" alt="" />
                 </a>
               </div>
             </div>
           </div>
           <div class="offset_banner_bottom">
             <div class="offset_banner_item">
-              <p class="offset_banner_item_subtitle">“</p>
+              <p class="offset_banner_item_subtitle red">“</p>
               <p class="offset_banner_item_text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
@@ -101,15 +141,31 @@
         </div>
       </section>
 
-      <section class="package_made container">
-        <div class="package_made_content">
-          <h2>Made in Kyrgyzstan</h2>
-          <img src="./assets/img/package_made_img.svg" class="package_made_img" alt="" />
-        </div>
-      </section>
-
-      <section class="package_plans">
+      <section class="package_plans seal_plans">
         <div class="package_plans_content container">
+          <div class="offset_banner_bottom mobile">
+            <div class="offset_banner_item">
+              <p class="offset_banner_item_subtitle red">“</p>
+              <p class="offset_banner_item_text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+            </div>
+            <div class="offset_banner_item">
+              <p class="offset_banner_item_text">
+                Ut enim ad minim veniam, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="main_content_item_left_socials">
+                <a href="" class="main_content_item_left_social">
+                  <img src="./assets/img/insta.svg" alt="" />
+                </a>
+                <a href="" class="main_content_item_left_social">
+                  <img src="./assets/img/whatsapp.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
           <h2 class="title">Виды упаковок</h2>
           <div class="package_plans_categories">
             <div class="package_plans_category orange active">Все категории</div>
@@ -126,42 +182,44 @@
             </p>
           </div>
 
-          <table>
-            <thead class="seal_table">
-              <tr>
-                <th>Модель</th>
-                <th>Модель</th>
-                <th>Модель</th>
-                <th>Модель</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>3000*1500</td>
-                <td>3000*1500</td>
-                <td>3000*1500</td>
-                <td>3000*1500</td>
-              </tr>
-              <tr>
-                <td>3000*1500</td>
-                <td>3000*1500</td>
-                <td>3000*1500</td>
-                <td>3000*1500</td>
-              </tr>
-              <tr>
-                <td>3000*1500</td>
-                <td>3000*1500</td>
-                <td>3000*1500</td>
-                <td>3000*1500</td>
-              </tr>
-              <tr>
-                <td>3000*1500</td>
-                <td>3000*1500</td>
-                <td>3000*1500</td>
-                <td>3000*1500</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table_content">
+            <table>
+              <thead class="seal_table">
+                <tr>
+                  <th>Модель</th>
+                  <th>Модель</th>
+                  <th>Модель</th>
+                  <th>Модель</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>3000*1500</td>
+                  <td>3000*1500</td>
+                  <td>3000*1500</td>
+                  <td>3000*1500</td>
+                </tr>
+                <tr>
+                  <td>3000*1500</td>
+                  <td>3000*1500</td>
+                  <td>3000*1500</td>
+                  <td>3000*1500</td>
+                </tr>
+                <tr>
+                  <td>3000*1500</td>
+                  <td>3000*1500</td>
+                  <td>3000*1500</td>
+                  <td>3000*1500</td>
+                </tr>
+                <tr>
+                  <td>3000*1500</td>
+                  <td>3000*1500</td>
+                  <td>3000*1500</td>
+                  <td>3000*1500</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
 
@@ -241,6 +299,66 @@
         </div>
       </section>
 
+      <!-- Те же слайды будут что и для package_gallery, только для мобилки  -->
+      <section class="offset_gallery mobile">
+        <div class="offset_gallery_content container">
+          <h2 class="title">Галерея продукции</h2>
+          <div class="offset_gallery_swiper_wrapper">
+            <div class="swiper offset_gallery_swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./assets/img/offset_gallery_1.png" class="offset_gallery_img" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/offset_gallery_2.png" class="offset_gallery_img" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/offset_gallery_3.png" class="offset_gallery_img" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/offset_gallery_1.png" class="offset_gallery_img" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/offset_gallery_2.png" class="offset_gallery_img" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="offset_gallery_next">
+              <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25.5" cy="25" r="22.5" fill="#ABCCEA" stroke="white" stroke-width="5" />
+                <path
+                  d="M29.5 31L22.5 24.5L29.5 18"
+                  stroke="#0059AB"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="offset_gallery_prev">
+              <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle
+                  cx="25"
+                  cy="25"
+                  r="22.5"
+                  transform="matrix(-1 0 0 1 50.5 0)"
+                  fill="#ABCCEA"
+                  stroke="white"
+                  stroke-width="5"
+                />
+                <path
+                  d="M21.5 31L28.5 24.5L21.5 18"
+                  stroke="#0059AB"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="contact">
         <div class="container">
           <div class="contact_content red">
@@ -309,14 +427,14 @@
 
     <footer class="footer">
       <nav class="nav container">
-        <a href="" class="nav_logo">
+        <a href="./index.html" class="nav_logo">
           <img src="./assets/img/logo_blue.svg" alt="" />
         </a>
         <div class="nav_links">
-          <a href="" class="nav_link">Упаковка</a>
-          <a href="" class="nav_link">Сувенирная продукция</a>
-          <a href="" class="nav_link">Офсетная печать</a>
-          <a href="" class="nav_link">Цифровая печать</a>
+          <a href="./package.html" class="nav_link">Упаковка</a>
+          <a href="./souvenir.html" class="nav_link">Сувенирная продукция</a>
+          <a href="./offset.html" class="nav_link">Офсетная печать</a>
+          <a href="./seal.html" class="nav_link">Цифровая печать</a>
         </div>
         <a href="" class="nav_right">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -340,6 +458,9 @@
           </svg>
           <p>0312 630110</p>
         </a>
+        <div class="nav_burger">
+          <img src="./assets/img/burger_menu_footer.svg" alt="" />
+        </div>
       </nav>
     </footer>
 
@@ -347,6 +468,33 @@
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script>
+      let swiper = new Swiper(".offset_gallery_swiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".offset_gallery_prev",
+          prevEl: ".offset_gallery_next",
+        },
+        speed: 600,
+        breakpoints: {
+          576: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 18,
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 18,
+          },
+        },
+      });
+
       let packageSwiper = new Swiper(".package_gallery_swiper", {
         scrollbar: ".swiper-scrollbar",
         effect: "coverflow",

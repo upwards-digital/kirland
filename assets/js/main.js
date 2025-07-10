@@ -29,3 +29,12 @@ $(".offset_gallery_close").click(function () {
   overlay.removeClass("active");
   $(".offset_gallery_modal").removeClass("active");
 });
+
+$(".nav_burger").click(function () {
+  overlay.addClass("active");
+  $(".burger_menu").addClass("active");
+});
+$(".burger_close").click(function () {
+  overlay.removeClass("active");
+  $(".burger_menu").removeClass("active");
+});
